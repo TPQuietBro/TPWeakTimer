@@ -13,8 +13,8 @@
 		6CB08CE01F2864B600320224 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CB08CDE1F2864B600320224 /* Main.storyboard */; };
 		6CB08CE21F2864B600320224 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CB08CE11F2864B600320224 /* Assets.xcassets */; };
 		6CB08CE51F2864B600320224 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CB08CE31F2864B600320224 /* LaunchScreen.storyboard */; };
-		6CB08CEE1F2864F600320224 /* TPWeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB08CED1F2864F600320224 /* TPWeakTimer.m */; };
 		6CB08CF11F28669A00320224 /* TempViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB08CF01F28669A00320224 /* TempViewController.m */; };
+		6CB08CF51F286F9D00320224 /* TPWeakTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CB08CF41F286F9D00320224 /* TPWeakTimer.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,10 +28,10 @@
 		6CB08CE11F2864B600320224 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6CB08CE41F2864B600320224 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6CB08CE61F2864B600320224 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6CB08CEC1F2864F600320224 /* TPWeakTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPWeakTimer.h; sourceTree = "<group>"; };
-		6CB08CED1F2864F600320224 /* TPWeakTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPWeakTimer.m; sourceTree = "<group>"; };
 		6CB08CEF1F28669A00320224 /* TempViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TempViewController.h; sourceTree = "<group>"; };
 		6CB08CF01F28669A00320224 /* TempViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TempViewController.m; sourceTree = "<group>"; };
+		6CB08CF31F286F9D00320224 /* TPWeakTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TPWeakTimer.h; sourceTree = "<group>"; };
+		6CB08CF41F286F9D00320224 /* TPWeakTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TPWeakTimer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +64,7 @@
 		6CB08CD41F2864B600320224 /* WeakTimer */ = {
 			isa = PBXGroup;
 			children = (
-				6CB08CEC1F2864F600320224 /* TPWeakTimer.h */,
-				6CB08CED1F2864F600320224 /* TPWeakTimer.m */,
+				6CB08CF21F286F9D00320224 /* TPWeakTimer */,
 				6CB08CD81F2864B600320224 /* AppDelegate.h */,
 				6CB08CD91F2864B600320224 /* AppDelegate.m */,
 				6CB08CDB1F2864B600320224 /* ViewController.h */,
@@ -87,6 +86,15 @@
 				6CB08CD61F2864B600320224 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		6CB08CF21F286F9D00320224 /* TPWeakTimer */ = {
+			isa = PBXGroup;
+			children = (
+				6CB08CF31F286F9D00320224 /* TPWeakTimer.h */,
+				6CB08CF41F286F9D00320224 /* TPWeakTimer.m */,
+			);
+			path = TPWeakTimer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,9 +171,9 @@
 			files = (
 				6CB08CDD1F2864B600320224 /* ViewController.m in Sources */,
 				6CB08CF11F28669A00320224 /* TempViewController.m in Sources */,
-				6CB08CEE1F2864F600320224 /* TPWeakTimer.m in Sources */,
 				6CB08CDA1F2864B600320224 /* AppDelegate.m in Sources */,
 				6CB08CD71F2864B600320224 /* main.m in Sources */,
+				6CB08CF51F286F9D00320224 /* TPWeakTimer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
