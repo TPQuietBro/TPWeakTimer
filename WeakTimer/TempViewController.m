@@ -30,10 +30,6 @@
     
 }
 
-- (void)doSomeThing:(NSTimer *)timer{
-    NSLog(@"123");
-}
-
 - (void)dealloc{
     [self.timer fireTimer];
 
