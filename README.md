@@ -18,7 +18,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor orangeColor];
-    //调用方法
+    
+    //调用方法一
+    //[self.timer tp_scheduledTimerWithTimeInterval:1 userInfo:nil repeat:YES userInfoBlock:^(id obj) {
+       // NSLog(@"123");
+    //}];
+    
+    //调用方法二
     [self.timer tp_timerWithTimeInterval:1 userInfo:nil repeat:YES userInfoBlock:^(id obj) {
     //这里写你要做的定时器操作
         NSLog(@"123");
