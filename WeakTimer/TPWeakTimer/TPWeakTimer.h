@@ -2,7 +2,7 @@
 //  TPWeakTimer.h
 //  WeakTimer
 //
-//  Created by tp on 2017/7/26.
+//  Created by tangpeng on 2017/7/26.
 //  Copyright © 2017年 com.allen. All rights reserved.
 //
 
