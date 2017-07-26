@@ -24,6 +24,7 @@
 - (void)tp_timerWithTimeInterval:(NSTimeInterval)time userInfo:(NSDictionary *)userInfo repeat:(BOOL)repeat userInfoBlock:(void (^)(id))userInfoBlock{
     self.userInfoBlock = userInfoBlock;
     self.timer = [NSTimer timerWithTimeInterval:time target:self selector:@selector(doSomeThing:) userInfo:userInfo repeats:YES];
+    
     [[NSRunLoop mainRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
 }
 
