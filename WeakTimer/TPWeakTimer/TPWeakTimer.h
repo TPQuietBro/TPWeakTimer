@@ -12,6 +12,8 @@
 
 - (void)tp_timerWithTimeInterval:(NSTimeInterval)time userInfo:(NSDictionary *)userInfo repeat:(BOOL)repeat userInfoBlock:(void(^)(id obj))userInfoBlock;
 
+- (void)tp_scheduledTimerWithTimeInterval:(NSTimeInterval)time userInfo:(NSDictionary *)userInfo repeat:(BOOL)repeat userInfoBlock:(void(^)(id obj))userInfoBlock;
+
 - (void)fireTimer;
 
 @end

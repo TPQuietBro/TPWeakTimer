@@ -27,6 +27,12 @@
     [[NSRunLoop mainRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
 }
 
+- (void)tp_scheduledTimerWithTimeInterval:(NSTimeInterval)time userInfo:(NSDictionary *)userInfo repeat:(BOOL)repeat userInfoBlock:(void (^)(id))userInfoBlock{
+    self.userInfoBlock = userInfoBlock;
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:time target:self selector:@selector(doSomeThing:) userInfo:userInfo repeats:repeat];
+    [[NSRunLoop mainRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
+}
+
 - (void)doSomeThing:(NSTimer *)timer{
     self.userInfoBlock ? self.userInfoBlock(timer.userInfo) : nil;
 }
