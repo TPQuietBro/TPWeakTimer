@@ -48,6 +48,7 @@
 		6CB08CC91F2864B600320224 = {
 			isa = PBXGroup;
 			children = (
+				6CB08CF21F286F9D00320224 /* TPWeakTimer */,
 				6CB08CD41F2864B600320224 /* WeakTimer */,
 				6CB08CD31F2864B600320224 /* Products */,
 			);
@@ -64,7 +65,6 @@
 		6CB08CD41F2864B600320224 /* WeakTimer */ = {
 			isa = PBXGroup;
 			children = (
-				6CB08CF21F286F9D00320224 /* TPWeakTimer */,
 				6CB08CD81F2864B600320224 /* AppDelegate.h */,
 				6CB08CD91F2864B600320224 /* AppDelegate.m */,
 				6CB08CDB1F2864B600320224 /* ViewController.h */,
@@ -94,7 +94,8 @@
 				6CB08CF31F286F9D00320224 /* TPWeakTimer.h */,
 				6CB08CF41F286F9D00320224 /* TPWeakTimer.m */,
 			);
-			path = TPWeakTimer;
+			name = TPWeakTimer;
+			path = WeakTimer/TPWeakTimer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -332,6 +333,7 @@
 				6CB08CEB1F2864B600320224 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
