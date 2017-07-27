@@ -2,7 +2,7 @@
 //  TPWeakTimer.m
 //  WeakTimer
 //
-//  Created by 魏信洋 on 2017/7/26.
+//  Created by tangpeng on 2017/7/26.
 //  Copyright © 2017年 com.allen. All rights reserved.
 //
 
@@ -24,15 +24,15 @@
 - (void)tp_timerWithTimeInterval:(NSTimeInterval)time userInfo:(NSDictionary *)userInfo repeat:(BOOL)repeat userInfoBlock:(void (^)(id))userInfoBlock{
     self.userInfoBlock = userInfoBlock;
     self.timer = [NSTimer timerWithTimeInterval:time target:self selector:@selector(doSomeThing:) userInfo:userInfo repeats:YES];
+    
     [[NSRunLoop mainRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
 }
 
 - (void)tp_scheduledTimerWithTimeInterval:(NSTimeInterval)time userInfo:(NSDictionary *)userInfo repeat:(BOOL)repeat userInfoBlock:(void (^)(id))userInfoBlock{
     self.userInfoBlock = userInfoBlock;
-    self.timer = [NSTimer timerWithTimeInterval:time target:self selector:@selector(doSomeThing:) userInfo:userInfo repeats:YES];
+    self.timer = [NSTimer scheduledTimerWithTimeInterval:time target:self selector:@selector(doSomeThing:) userInfo:userInfo repeats:repeat];
     [[NSRunLoop mainRunLoop] addTimer:self.timer forMode:NSRunLoopCommonModes];
 }
-
 
 - (void)doSomeThing:(NSTimer *)timer{
     self.userInfoBlock ? self.userInfoBlock(timer.userInfo) : nil;
